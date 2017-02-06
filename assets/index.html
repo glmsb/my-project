@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WebView_Test</title>
+<script type="text/javascript">  
+    function show(jsondata) {  
+        var jsonobjs = eval(jsondata);                          // 生成json数组  
+        var table = document.getElementById("personTable");  
+        for ( var y = 0; y < jsonobjs.length; y++) {             // 遍历json数组  
+            var tr = table.insertRow(table.rows.length);        // 每个对象创建1个TR  
+            var td1 = tr.insertCell(0);                         // 创建3个TD     
+            var td2 = tr.insertCell(1);  
+            var td3 = tr.insertCell(2);  
+            td1.innerHTML = jsonobjs[y].name;                   // 设置TD的内容为json对象的name属性  
+            td2.innerHTML = jsonobjs[y].amount;  
+            td3.innerHTML = "<a href='javascript:contact.call(\"" + jsonobjs[y].phone + "\")'>" + jsonobjs[y].phone + "</a>"; // 点击超链接时执行Java方法  
+        }  
+    }  
+</script>  
+</head>
+<body onLoad="javascript:contact.showContacts()">  
+    <table width="100%" id="personTable">  
+        <tr>  
+            <td width="30%">姓名</td>  
+            <td width="30%" align="center">存款</td>  
+            <td align="center">电话</td>  
+        </tr>  
+    </table>  
+</body>  
+</html>  

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	
+    <com.example.abstractAtactivity.TitleLayout
+        android:layout_width="match_parent"
+   	    android:layout_height="wrap_content">
+        
+    </com.example.abstractAtactivity.TitleLayout>
+    
+    <TableRow>
+       <TextView
+        android:layout_span="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"  
+        android:textSize="22sp"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="20"
+        android:textStyle="bold|italic"
+        android:textColor="@color/hotpink"
+        android:text="字幕滚动,字体加粗并且为斜体单行显示，有焦点，跑马灯效果，滚动重复无限次" />
+    </TableRow>
+
+    <TableRow android:layout_marginTop="10dp">
+		 <Button
+		     android:id="@+id/button_1"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="@drawable/selector"
+		     android:padding="8dp"
+		     android:text="显式intent" />
+
+		 <Button
+		     android:id="@+id/button_2"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="8dp"
+		     android:padding="3dp"
+		     android:background="@drawable/button_rounded_background"
+		     android:text="隐式intent" />
+		 
+		 <Button
+		     android:id="@+id/button_3"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="8dp"
+		     android:background="@drawable/btn_selector"
+		     android:padding="3dp"
+		     android:text="百度一下" />
+		 
+		 <ImageButton
+		     android:id="@+id/button_4"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="3dp"
+		     android:layout_gravity="center"
+		     android:background="@drawable/call"/>
+		
+    </TableRow>
+    
+    <TableRow android:layout_marginTop="10dp">
+		 <Button
+		     android:id="@+id/progress_dialog"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="@drawable/selector"
+		     android:padding="8dp"
+		     android:text="pgDialog" />
+
+		 <Button
+		     android:id="@+id/alert_dialog"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="8dp"
+		     android:padding="3dp"
+		     android:background="@drawable/button_rounded_background"
+		     android:text="对话框" />
+		 
+		 <Button
+		     android:id="@+id/date_picker_dialog"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="8dp"
+		     android:background="@drawable/btn_selector"
+		     android:padding="3dp"
+		     android:text="选择日期" />
+		 
+		<ImageButton
+		     android:id="@+id/camera"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="3dp"
+		     android:layout_gravity="center"
+		     android:background="@drawable/takephoto_selector"/>		
+    </TableRow>
+    
+    
+    
+    <TableRow >
+		 <Button
+		     android:id="@+id/receiver"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="@drawable/selector"
+		     android:padding="8dp"
+		     android:text="强制下线" />
+
+		 <Button
+		     android:id="@+id/notification"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="8dp"
+		     android:padding="3dp"
+		     android:background="@drawable/button_rounded_background"
+		     android:text="发送通知" />
+		 
+		 <Button
+		     android:id="@+id/assets"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="8dp"
+		     android:background="@drawable/btn_selector"
+		     android:padding="3dp"
+		     android:text="HTML5" />	 
+		
+		<ImageView
+		     android:id="@+id/contacts"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="3dp"	    
+		     android:src="@drawable/contacts_selector" />
+		
+    </TableRow>
+    
+    
+    <TableRow >
+		 <Button
+		     android:id="@+id/library"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:background="@drawable/selector"
+		     android:padding="8dp"
+		     android:text="图书管理" />
+
+		 <Button
+		     android:id="@+id/bb"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="8dp"
+		     android:padding="3dp"
+		     android:background="@drawable/button_rounded_background"
+		     android:text="发送通知" />
+		 
+		 <Button
+		     android:id="@+id/cc"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="8dp"
+		     android:background="@drawable/btn_selector"
+		     android:padding="3dp"
+		     android:text="HTML5" />
+		 
+		
+		 <ImageButton
+		     android:id="@+id/message"
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:layout_marginLeft="3dp"
+		     android:layout_gravity="center"
+		     android:background="@drawable/message"/>
+		
+    </TableRow>
+
+</TableLayout>

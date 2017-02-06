@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="0" >
+    
+   <TableRow 
+       android:background="@color/cyan"
+       android:paddingTop="40dp"
+       android:paddingBottom="40dp" >
+       <ImageView
+           android:layout_height="wrap_content"
+           android:layout_span="2"
+           android:src="@drawable/login" />
+   </TableRow>
+    
+   <TableRow android:layout_marginTop="30dp">      
+       <EditText
+           android:id="@+id/count"
+           android:layout_height="wrap_content"
+           android:layout_span="2"
+           android:hint="手机号/邮箱">
+       </EditText>
+   </TableRow>
+   
+   <TableRow>
+       <EditText
+           android:id="@+id/password"
+           android:layout_height="wrap_content"
+           android:layout_span="2"
+           android:inputType="textPassword"
+           android:hint="密码">
+       </EditText>     
+   </TableRow>
+   
+   <TableRow>
+       <CheckBox 
+           android:id="@+id/remember_pass"
+           android:layout_height="wrap_content"
+           android:text="     记住密码"/>
+   </TableRow>
+   
+   <TableRow android:padding="18dp">
+       <Button 
+           android:id="@+id/login"
+           android:layout_height="wrap_content"
+           android:layout_span="2"
+           android:background="@drawable/selector"
+           android:gravity="center"
+           android:text="登 陆"
+           android:textColor="@color/white"/>
+   </TableRow>
+
+   <TableRow android:layout_marginTop="220dp">
+
+       <TextView 
+           android:id="@+id/help"
+           android:padding="5dp"
+           android:textSize="12sp"
+           />
+
+       <TextView
+          android:id="@+id/register"
+          android:padding="5dp"
+          android:textSize="12sp"/>
+   </TableRow>
+ 
+</TableLayout>

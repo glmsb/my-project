@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sandybrown"
+    android:padding="2dip" >
+
+     <Button
+            android:id="@+id/retrun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:text="返回"
+            android:textColor="#0ff" />
+     
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:text="分享"
+            android:textColor="#0ff" />
+
+        <ImageView
+            android:id="@+id/set"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/actionbar_more_icon" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
